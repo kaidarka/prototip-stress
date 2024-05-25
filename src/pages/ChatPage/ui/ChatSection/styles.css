@@ -68,6 +68,16 @@
     position: absolute;
 }
 
+.messages-list__step {
+    display: flex;
+    align-items: end;
+}
+
+.messages-list__step img {
+    height: 64px;
+    width: 64px;
+}
+
 .from-me {
     align-self: flex-end;
     background-color: var(--secondary-color);
