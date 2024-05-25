@@ -1,0 +1,44 @@
+header {
+    height: 88px;
+    background: var(--dark-white-color);
+    display: flex;
+    padding: 10px 24px;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-wrapper {
+    max-width: 970px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-subtitle {
+    text-align: center;
+}
+
+.main-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 40px;
+}

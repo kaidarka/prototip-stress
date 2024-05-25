@@ -1,0 +1,10 @@
+.Title {
+}
+
+.Title-white {
+    color: var(--white-color);
+}
+
+.Title-black {
+    color: var(--black-color);
+}

@@ -1,0 +1,60 @@
+.Text {
+    color: var(--black-color);
+}
+
+
+.Text-white {
+    color: var(--white-color);
+}
+
+.Text-black {
+    color: var(--black-color);
+}
+
+
+.Text-xxs {
+    font: var(--font-xxs)
+}
+
+.Text-xs {
+    font: var(--font-xs)
+}
+
+.Text-s {
+    font: var(--font-s)
+}
+
+.Text-m {
+    font: var(--font-m)
+}
+
+.Text-l {
+    font: var(--font-l)
+}
+
+.Text-xl {
+    font: var(--font-l)
+}
+
+
+.underline {
+    text-decoration: underline;
+}
+
+@media (width <= 720px) {
+    .Text-l {
+        font: var(--font-m);
+    }
+
+    .Text-m {
+        font: var(--font-s)
+    }
+
+    .Text-s {
+        font: var(--font-xs)
+    }
+
+    .Text-xs {
+        font: var(--font-xxs)
+    }
+}

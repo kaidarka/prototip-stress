@@ -1,0 +1,120 @@
+@font-face {
+    font-family: AmikoRegular;
+    src: local("AmikoRegular"),
+        url("./shared/fonts/Amiko-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ALS Gorizont Medium";
+    src: local("ALS Gorizont Medium"),
+        url("./shared/fonts/ALSGorizont-Medium.otf") format("truetype");
+    font-weight: normal;
+}
+
+:root {
+    /* Colors */
+    --primary-color: #7FF1FB;
+    --secondary-color: #6A7FDB;
+    --black-color: #08182B;
+    --white-color: #FCF7FF;
+    --dark-white-color: #F0E6EF;
+
+    /* FONTS */
+    --font-family-main: 'AmikoRegular', sans-serif;
+    --font-size-xxs: 14px;
+    --font-line-xxs: 22px;
+    --font-weight-xxs: 400;
+    --font-xxs: var(--font-weight-xxs) var(--font-size-xxs) / var(--font-line-xxs) var(--font-family-main);
+    --font-size-xs: 16px;
+    --font-line-xs: 24px;
+    --font-weight-xs: 400;
+    --font-xs: var(--font-weight-xs) var(--font-size-xs) / var(--font-line-xs) var(--font-family-main);
+    --font-size-s: 20px;
+    --font-line-s: 28px;
+    --font-weight-s: 400;
+    --font-s: var(--font-weight-s) var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+    --font-size-m: 24px;
+    --font-line-m: 32px;
+    --font-weight-m: 400;
+    --font-m: var(--font-weight-m) var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+    --font-size-l: 32px;
+    --font-line-l: 40px;
+    --font-weight-l: 400;
+    --font-l: var(--font-weight-l) var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    --font-size-xl: 40px;
+    --font-line-xl: 56px;
+    --font-weight-xl: 400;
+    --font-xl: var(--font-weight-xl) var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+    --font-size-xxl: 48px;
+    --font-line-xxl: 64px;
+    --font-weight-xxl: 600;
+    --font-xxl: var(--font-weight-xxl) var(--font-size-xxl) / var(--font-line-xxl) var(--font-family-main);
+    --font-size-xxxl: 56px;
+    --font-line-xxxl: 72px;
+    --font-weight-xxxl: 400;
+    --font-xxxl: var(--font-weight-xxxl) var(--font-size-xxxl) / var(--font-line-xxxl) var(--font-family-main);
+
+    /* Sizes */
+}
+
+/* Reset and base styles  */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+
+body {
+    margin: 0;
+    font-family: AmikoRegular, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--white-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ALS Gorizont Medium', sans-serif;
+}
+
+h1 {
+    font-size: var(--font-size-xxxl);
+    line-height: var(--font-line-xxxl);
+}
+
+h2 {
+    font-size: var(--font-size-xxl);
+    line-height: var(--font-line-xxl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
+}
+
+h4 {
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
+}
+
+h5 {
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
+}
+
+h6 {
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
+}

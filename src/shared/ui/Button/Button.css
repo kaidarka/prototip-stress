@@ -1,0 +1,48 @@
+.Button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.Button:hover {
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+.Button-s {
+    padding: 4px 16px;
+    font: var(--font-xxs);
+}
+
+.Button-m {
+    padding: 8px 20px;
+    font: var(--font-s);
+}
+
+.Button-l {
+    padding: 8px 24px;
+    font: var(--font-m);
+}
+
+.Button-primary {
+    background: var(--primary-color);
+}
+
+.Button-secondary {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.Button-dashed {
+    background: none;
+    border: 1px dashed var(--black-color);
+}
+
+.Button-disabled {
+    background: var(--black-color);
+    cursor: not-allowed;
+}
