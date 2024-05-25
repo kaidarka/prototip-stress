@@ -13,6 +13,7 @@ export const ChatSection = (props: IChatSectionProps) => {
         step: number;
         name?: string;
         selectedOption?: number;
+        messages?: Record<number, string>
     }>({
         step: 0,
         name: undefined,

@@ -11,8 +11,10 @@ interface IInputProps {
         step: number;
         name?: string;
         selectedOption?: number
+        messages?: Record<number, string>
     }
-    setChatInfo: Dispatch<SetStateAction<{ step: number; name?: string; }>>
+    setChatInfo: Dispatch<SetStateAction<{
+        step: number; name?: string; messages?: Record<number, string> }>>
 }
 
 export const Input = (props: IInputProps) => {
@@ -24,12 +26,23 @@ export const Input = (props: IInputProps) => {
     }, []);
 
     const onClickSendButton = useCallback(() => {
-        setChatInfo({ step: 1, name: value });
+        setChatInfo(
+            (prevState) => ({
+                step: prevState.step + 1,
+                name: chatInfo.step === 0 ? value : prevState.name,
+                messages: { ...prevState.messages, [prevState.step]: value },
+            }),
+        );
         setValue('');
-    }, [setChatInfo, value]);
+    }, [setChatInfo, value, chatInfo.step]);
 
     const onClickOption = useCallback((option: number) => () => {
-        setChatInfo((prevChatInfo) => ({ ...prevChatInfo, step: 2, selectedOption: option }));
+        setChatInfo((prevState) => ({
+            ...prevState,
+            step: 2,
+            selectedOption: option,
+            messages: { ...prevState.messages, [prevState.step]: Options[option] },
+        }));
     }, [setChatInfo]);
 
     const renderOptions = useCallback((key: number) => (
@@ -55,13 +68,13 @@ export const Input = (props: IInputProps) => {
                     className="chat-input"
                     value={value}
                     onChange={onChangeInput}
-                    disabled={chatInfo.step !== 0}
+                    disabled={chatInfo.step === 1 || chatInfo.step > 3}
                 />
                 <Button
                     styleType={ButtonTypes.SECONDARY}
                     className="send-button"
                     onClick={onClickSendButton}
-                    disabled={!value || chatInfo.step !== 0}
+                    disabled={!value || chatInfo.step === 1}
                 >
                     <img src={sendIcon} alt="send" />
                 </Button>
