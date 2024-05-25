@@ -1,6 +1,7 @@
 import React from 'react';
-import './styles.css';
+import { Text, TextSizes } from 'shared/ui/Text/Text';
 import { chatsDB } from '../../model/chat';
+import './styles.css';
 
 interface IMessagesProps {
     chatInfo: {
@@ -73,6 +74,14 @@ export const Messages = (props: IMessagesProps) => {
                                     chat.messages[4].text(chatInfo.name, chatInfo.selectedOption)
                                 }
                             </p>
+                        </div>
+                        <div className="end-text">
+                            <Text size={TextSizes.XS}>
+                                На этом ваше взаимодействие с этим чатом завершено.
+                            </Text>
+                            <Text size={TextSizes.XS}>
+                                Пожалуйста, перейдите к следующему этапу тестирования.
+                            </Text>
                         </div>
                     </>
                 )}

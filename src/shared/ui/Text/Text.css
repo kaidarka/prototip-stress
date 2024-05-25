@@ -11,29 +11,33 @@
     color: var(--black-color);
 }
 
+.Text-secondary {
+    color: var(--dark-white-color);
+}
+
 
 .Text-xxs {
-    font: var(--font-xxs)
+    font: var(--font-xxs);
 }
 
 .Text-xs {
-    font: var(--font-xs)
+    font: var(--font-xs);
 }
 
 .Text-s {
-    font: var(--font-s)
+    font: var(--font-s);
 }
 
 .Text-m {
-    font: var(--font-m)
+    font: var(--font-m);
 }
 
 .Text-l {
-    font: var(--font-l)
+    font: var(--font-l);
 }
 
 .Text-xl {
-    font: var(--font-l)
+    font: var(--font-l);
 }
 
 

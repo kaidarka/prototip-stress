@@ -14,6 +14,7 @@ export enum TextSizes {
 export enum TextColors {
     WHITE = 'Text-white',
     BLACK = 'Text-black',
+    SECONDARY = 'Text-secondary',
 }
 
 export enum TextStyle {
