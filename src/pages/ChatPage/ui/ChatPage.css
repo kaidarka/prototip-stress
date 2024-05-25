@@ -55,3 +55,7 @@
 .sidebar-avatar {
     width: 160px;
 }
+
+.sidebar-helper-wrapper p {
+    text-align: center;
+}

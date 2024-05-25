@@ -56,17 +56,17 @@ export const chatsDB: Record<number, Chat> = {
     },
     1: {
         avatar: avatar1,
-        name: 'Александр',
+        name: 'Ольга',
         messages,
     },
     2: {
         avatar: avatar2,
-        name: 'Александр',
+        name: 'Максим',
         messages,
     },
     3: {
         avatar: avatar3,
-        name: 'Александр',
+        name: 'Евгения',
         messages,
     },
 };
