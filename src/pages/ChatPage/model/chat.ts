@@ -1,4 +1,7 @@
-import avatar from 'shared/assets/avatars/avatar.png';
+import avatar0 from 'shared/assets/avatars/avatar0.png';
+import avatar1 from 'shared/assets/avatars/avatar1.png';
+import avatar2 from 'shared/assets/avatars/avatar2.png';
+import avatar3 from 'shared/assets/avatars/avatar3.png';
 
 export const Options: Record<number, string> = {
     0: 'Хочу с кем-нибудь поговорить',
@@ -47,7 +50,22 @@ interface Chat {
 
 export const chatsDB: Record<number, Chat> = {
     0: {
-        avatar,
+        avatar: avatar0,
+        name: 'Александр',
+        messages,
+    },
+    1: {
+        avatar: avatar1,
+        name: 'Александр',
+        messages,
+    },
+    2: {
+        avatar: avatar2,
+        name: 'Александр',
+        messages,
+    },
+    3: {
+        avatar: avatar3,
         name: 'Александр',
         messages,
     },
