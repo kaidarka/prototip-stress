@@ -28,6 +28,7 @@ export const Input = (props: IInputProps) => {
     const onClickSendButton = useCallback(() => {
         setChatInfo(
             (prevState) => ({
+                ...prevState,
                 step: prevState.step + 1,
                 name: chatInfo.step === 0 ? value : prevState.name,
                 messages: { ...prevState.messages, [prevState.step]: value },
@@ -50,6 +51,7 @@ export const Input = (props: IInputProps) => {
             styleType={ButtonTypes.DASHED}
             size={ButtonSize.M}
             onClick={onClickOption(key)}
+            key={key}
         >
             {Options[key]}
         </Button>
